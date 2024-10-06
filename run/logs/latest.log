@@ -1,0 +1,24 @@
+[19:45:45] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.4+7-LTS; Eclipse Adoptium Temurin-21.0.4+7) on Linux 6.11.0-5-cachyos (amd64)
+[19:45:45] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-119-master@7cd4f2c (2024-10-03T15:19:34Z) for Minecraft 1.21.1
+[19:45:45] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[19:45:45] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Remapping server...
+[19:45:49] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Done remapping server in 3064ms.
+[19:45:49] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin '/home/domie/Documents/coding/domie/PaperPluginTemplate/build/libs/PaperPluginTemplate-1.0-SNAPSHOT-all.jar'...
+[19:45:49] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin '/home/domie/Documents/coding/domie/PaperPluginTemplate/build/libs/PaperPluginTemplate-1.0-SNAPSHOT-all.jar' in 56ms.
+[19:45:49] [ServerMain/ERROR]: [PluginFlagProviderSource] Error loading plugin: java.lang.IllegalArgumentException: File 'plugins/.paper-remapped/extra-plugins/PaperPluginTemplate-1.0-SNAPSHOT-all-1728236745871.jar' specified through 'add-plugin' argument does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+java.lang.RuntimeException: java.lang.IllegalArgumentException: File 'plugins/.paper-remapped/extra-plugins/PaperPluginTemplate-1.0-SNAPSHOT-all-1728236745871.jar' specified through 'add-plugin' argument does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:86) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paper.plugin.provider.source.PluginFlagProviderSource.registerProviders(PluginFlagProviderSource.java:42) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paper.plugin.provider.source.PluginFlagProviderSource.registerProviders(PluginFlagProviderSource.java:14) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:15) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:118) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at net.minecraft.server.Main.main(Main.java:123) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at org.bukkit.craftbukkit.Main.main(Main.java:281) ~[paper-1.21.1.jar:1.21.1-119-7cd4f2c]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: File 'plugins/.paper-remapped/extra-plugins/PaperPluginTemplate-1.0-SNAPSHOT-all-1728236745871.jar' specified through 'add-plugin' argument does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	... 10 more
+[19:45:49] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[19:45:51] [ServerMain/WARN]: Failed to load eula.txt
+[19:45:51] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

@@ -1,0 +1,7 @@
+name: PaperPlugin
+version: '1.0'
+main: dk.domiev.paperplugin.PaperPlugin
+description: Paper Plugin
+api-version: '1.21.1'
+bootstrapper: io.papermc.testplugin.TestPluginBootstrap
+loader: io.papermc.testplugin.TestPluginLoader
